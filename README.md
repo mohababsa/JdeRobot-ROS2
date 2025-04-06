@@ -1,4 +1,4 @@
-# GSoC 2025 ROS Challenge Progress
+# GSoC 2025 ROS2 Challenge Progress
 
 ## Overview
 This README documents my progress on the GSoC 2025 ROS challenge as of April 6, 2025. The challenge consists of three parts:
@@ -29,16 +29,45 @@ Package creation ![Sign Up](screenshots/scr1.png)
   ```bash
   ros2 run hello_ros2 publisher_node
   ```
-  Output: `Publishing: "Hello! ROS2 is fun." every second`
+  Output: `Publishing: "Hello! ROS2 is fun."` every second
 - Terminal 2:
   ```bash
   ros2 run hello_ros2 subscriber_node
   ```
-  Output: `I heard: "Hello! ROS2 is fun." in sync`
+  Output: `I heard: "Hello! ROS2 is fun."` in sync
 
 4. **Demo**
    Video shows publisher sending messages and subscriber receiving them
-   
+
+## Part 1b: TurtleBot3 Simulation with Laser Scan Visualization
+1. **Objective**
+Simulate TurtleBot3 in Gazebo and visualize its laser scan in RViz2
+
+2. **Install Dependencies**
+   ```bash
+   sudo apt install ros-humble-turtlebot3-simulations ros-humble-gazebo-ros-pkgs -y
+   ```
+
+3. **Launch Attempt**
+   ```bash
+   source /opt/ros/humble/setup.bash
+   export TURTLEBOT3_MODEL=burger
+   ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+   ```
+
+4. **RViz2 Setup**
+   ```bash
+   ros2 run rviz2 rviz2
+   ```
+
+5. **Challenges**
+- Gazebo Issue: `gzserver` starts but `/spawn_entity` service fails:
+- Error: `Service /spawn_entity unavailable. Was Gazebo started with GazeboRosFactory?`
+- Standalone `ros2 run gazebo_ros gzserver` exits with code 255.
+
+6. **Status**
+In Progress: Gazebo integration unresolved; TurtleBot3 not spawning.
+
 ## Author
 **Mohamed ABABSA** - GSoC 2025 Applicant
 
