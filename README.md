@@ -36,9 +36,9 @@ Package creation [hello_ros2](ros2_ws/src/hello_ros2)
   ```
   Output: `I heard: "Hello! ROS2 is fun."` in sync.
 
-4. **Demo**:
+4. **Watch the Demo**:
    Video shows publisher sending messages and subscriber receiving them
-   [Watch demo video](Demos/part1a_demo.mp4)
+   [ROS2 Humble in Action: Publisher-Subscriber Magic Unveiled](https://www.youtube.com/watch?v=abc123)
 
 ## Part 1b: TurtleBot3 Simulation with Laser Scan Visualization
 1. **Objective**:
