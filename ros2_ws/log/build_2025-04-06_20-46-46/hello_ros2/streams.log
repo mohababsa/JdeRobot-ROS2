@@ -1,0 +1,23 @@
+[0.846s] Invoking command in '/home/mohamedab/ros2_ws/src/hello_ros2': PYTHONPATH=/home/mohamedab/ros2_ws/build/hello_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mohamedab/ros2_ws/install/hello_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hello_ros2 build --build-base /home/mohamedab/ros2_ws/build/hello_ros2/build install --record /home/mohamedab/ros2_ws/build/hello_ros2/install.log --single-version-externally-managed install_data
+[1.074s] running egg_info
+[1.074s] writing ../../build/hello_ros2/hello_ros2.egg-info/PKG-INFO
+[1.074s] writing dependency_links to ../../build/hello_ros2/hello_ros2.egg-info/dependency_links.txt
+[1.075s] writing entry points to ../../build/hello_ros2/hello_ros2.egg-info/entry_points.txt
+[1.076s] writing requirements to ../../build/hello_ros2/hello_ros2.egg-info/requires.txt
+[1.076s] writing top-level names to ../../build/hello_ros2/hello_ros2.egg-info/top_level.txt
+[1.078s] reading manifest file '../../build/hello_ros2/hello_ros2.egg-info/SOURCES.txt'
+[1.078s] adding license file 'LICENSE'
+[1.079s] writing manifest file '../../build/hello_ros2/hello_ros2.egg-info/SOURCES.txt'
+[1.079s] running build
+[1.079s] running build_py
+[1.079s] running install
+[1.080s] running install_lib
+[1.081s] running install_data
+[1.081s] running install_egg_info
+[1.083s] removing '/home/mohamedab/ros2_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2-0.0.0-py3.10.egg-info' (and everything under it)
+[1.083s] Copying ../../build/hello_ros2/hello_ros2.egg-info to /home/mohamedab/ros2_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2-0.0.0-py3.10.egg-info
+[1.084s] running install_scripts
+[1.104s] Installing publisher_node script to /home/mohamedab/ros2_ws/install/hello_ros2/lib/hello_ros2
+[1.104s] Installing subscriber_node script to /home/mohamedab/ros2_ws/install/hello_ros2/lib/hello_ros2
+[1.105s] writing list of installed files to '/home/mohamedab/ros2_ws/build/hello_ros2/install.log'
+[1.142s] Invoked command in '/home/mohamedab/ros2_ws/src/hello_ros2' returned '0': PYTHONPATH=/home/mohamedab/ros2_ws/build/hello_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mohamedab/ros2_ws/install/hello_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hello_ros2 build --build-base /home/mohamedab/ros2_ws/build/hello_ros2/build install --record /home/mohamedab/ros2_ws/build/hello_ros2/install.log --single-version-externally-managed install_data

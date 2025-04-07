@@ -1,0 +1,4 @@
+[console_scripts]
+publisher_node = hello_ros2.publisher_node:main
+subscriber_node = hello_ros2.subscriber_node:main
+
