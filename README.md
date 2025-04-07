@@ -118,5 +118,5 @@ Package creation [waypoint_nav](ros2_ws/src/waypoint_nav)
 **Mohamed ABABSA** - GSoC 2025 Applicant
 
 ## License
-TaskMaster is licensed under the [MIT License](LICENSE)
+JdeRobot-ROS2 is licensed under the [MIT License](LICENSE)
 
