@@ -66,7 +66,52 @@ Simulate TurtleBot3 in Gazebo and visualize its laser scan in RViz2
 - Standalone `ros2 run gazebo_ros gzserver` exits with code 255.
 
 6. **Status**
-In Progress: Gazebo integration unresolved; TurtleBot3 not spawning.
+- In Progress: Gazebo integration unresolved; TurtleBot3 not spawning.
+
+## Part 2: ROS2 Navigation2 with Waypoint Navigation
+1. **Objective**
+Navigate TurtleBot3 in Gazebo using Navigation2, hitting at least three waypoints.
+
+2. **Install Dependencies**
+   ```bash
+   sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup -y
+   ```
+   
+3. **Development**
+Package creation ![Sign Up](screenshots/scr1.png)
+
+4. **Build and Run**
+   ```bash
+   cd ~/ros2_ws
+   colcon build
+   source install/setup.bash
+   ```
+- Terminal 1: Gazebo
+  ```bash
+  source /opt/ros/humble/setup.bash
+  export TURTLEBOT3_MODEL=burger
+  ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+  ```
+  Issue: `/spawn_entity` unavailable.
+- Terminal 2: Navigation2
+  ```bash
+  ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True
+  ```
+  Issue: `KeyError: 'TURTLEBOT3_MODEL'`.
+- Terminal 3: Waypoint Navigator
+  ```bash
+  ros2 run waypoint_nav waypoint_navigator
+  ```
+  Output: `Sending waypoint 1: (1.0, 0.0, 0.0)` (hangs without Navigation2).
+
+5. **Challenges**
+- Gazebo: Same `/spawn_entity` issue as Part 1b.
+- Navigation2: Missing environment variable fixed by adding `export TURTLEBOT3_MODEL=burger`.
+
+6. **Status**
+- Success: `waypoint_nav` package built and runs.
+- In Progress: Gazebo and Navigation2 integration pending.
+
 
 ## Author
 **Mohamed ABABSA** - GSoC 2025 Applicant
